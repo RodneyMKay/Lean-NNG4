@@ -56,11 +56,11 @@ can be omitted):
   induction x with d hd
   · intro h
     rw [zero_add] at h
-    assumption
+    exact h
   · intro h
     rw [succ_add] at h
     apply succ_inj at h
     apply hd at h
-    assumption
+    exact h
 ```
 "
